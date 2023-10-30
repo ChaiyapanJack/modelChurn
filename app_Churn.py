@@ -45,7 +45,7 @@ with tab1:
         result = "Churned" if y_pred_new[0] == 1 else "Retained"
 
         
-        st.markdown(f"Prediction result :  <span style='color:red' 'font-size: 250%'> {result}</span>",
+        st.markdown(f"Prediction result :  <p style="font-family:Courier; color:Blue; font-size: 20px;">{result}</p>",
              unsafe_allow_html=True)
 
 with tab2:
