@@ -45,6 +45,8 @@ with tab1:
         result = "Churned" if y_pred_new[0] == 1 else "Retained"
 
         st.write(f"Prediction result: {result}")
+        st.markdown(f"Prediction result: {result} <span style='color:red'>red</span>",
+             unsafe_allow_html=True)
 
 with tab2:
     st.header(" 🗃 Predict from CSV")
