@@ -44,7 +44,7 @@ with tab1:
         # Convert prediction to result
         result = "Churned" if y_pred_new[0] == 1 else "Retained"
 
-        st.write(f"Prediction result: {result}")
+        
         st.markdown(f"Prediction result: {result} <span style='color:red'>{result}</span>",
              unsafe_allow_html=True)
 
