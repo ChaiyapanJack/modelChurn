@@ -88,8 +88,8 @@ with tab2:
         
         fig2 , ax =  plt.subplots(figsize=(14, 8))
         sns.countplot(data=df , x='gender', hue='Predict Churn')
-        # for container in ax.containers:
-        #     ax.bar_label(container)
+        for container in ax.containers:
+            ax.bar_label(container)
 
         st.pyplot(fig2)
       
